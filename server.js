@@ -60,7 +60,7 @@ app.post("/api/exercise/new-user", (req, res) => {
   });
 });
 
-// Create endpoint for getting list of users in database
+// Get request for listing users in database
 app.get("/api/exercise/users", (req, res) => {
   User.find({}, (err, result) => {
     res.send(result);
